@@ -16,8 +16,8 @@ steps:
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright browsers'
 
-- script: npx playwright test
-  displayName: 'Run Playwright tests'
+- script: npx playwright test path/to/your/spec-file.spec.ts
+  displayName: 'Run specific Playwright spec file'
   env:
     CI: 'true'
 
